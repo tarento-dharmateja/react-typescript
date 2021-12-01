@@ -30,7 +30,7 @@ function App() {
   ];
   return (
     <div className="App">
-      <Welcome name="Teja" messageCount={10} isLoggedIn={true} />
+      {/* <Welcome name="Teja" messageCount={10} isLoggedIn={true} />
       <Person name={personName} />
       <PersonList names={personList} />
       <Status status="loading"></Status>
@@ -45,8 +45,7 @@ function App() {
         value=""
         handleChange={(event) => console.log("Input event", event)}
       />
-
-      <Container styles={{ border: "1px solid black", padding: "1rem" }} />
+      <Container styles={{ border: "1px solid black", padding: "1rem" }} /> */}
     </div>
   );
 }
