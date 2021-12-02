@@ -8,26 +8,35 @@ import { Button } from "./components/Button";
 import { Input } from "./components/Input";
 import { Container } from "./components/Container";
 
+import { LoggedIn } from "./components/state/LoggedIn";
+import { Counter } from "./components/state/Counter";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
+import { Box } from "./components/context/Box";
+import { UserContextProvider } from "./components/context/UserContext";
+import { User } from "./components/context/User";
+import { DomRef } from "./components/ref/DomRef";
+import { MutableRef } from "./components/ref/MutableRef";
+//import { Counter } from "./components/class/Counter";
 function App() {
-  const personName = {
-    first: "Dharma",
-    last: "teja",
-  };
+  // const personName = {
+  //   first: "Dharma",
+  //   last: "teja",
+  // };
 
-  const personList = [
-    {
-      first: "Dharma",
-      last: "teja",
-    },
-    {
-      first: "Saurav",
-      last: "verma",
-    },
-    {
-      first: "Subham",
-      last: "Singh",
-    },
-  ];
+  // const personList = [
+  //   {
+  //     first: "Dharma",
+  //     last: "teja",
+  //   },
+  //   {
+  //     first: "Saurav",
+  //     last: "verma",
+  //   },
+  //   {
+  //     first: "Subham",
+  //     last: "Singh",
+  //   },
+  // ];
   return (
     <div className="App">
       {/* <Welcome name="Teja" messageCount={10} isLoggedIn={true} />
@@ -46,6 +55,19 @@ function App() {
         handleChange={(event) => console.log("Input event", event)}
       />
       <Container styles={{ border: "1px solid black", padding: "1rem" }} /> */}
+      <LoggedIn />
+      {/* <Counter /> */}
+      {/* 
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
+      <UserContextProvider>
+        <User />
+      </UserContextProvider>
+      <DomRef />
+      <MutableRef />
+      <Counter /> */}
+      {/* <Counter message="The count value is " /> */}
     </div>
   );
 }
